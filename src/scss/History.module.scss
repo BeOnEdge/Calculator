@@ -1,0 +1,44 @@
+.history {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history h2 {
+    margin-bottom: 10px;
+  }
+  
+  .history ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .history li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .history button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .history button:hover {
+    background-color: #e53935;
+  }
+  
+  .history button:active {
+    background-color: #d32f2f;
+  }
+  

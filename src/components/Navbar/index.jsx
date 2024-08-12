@@ -5,15 +5,15 @@ import style from "./Nambar.module.scss";
 const Navbar = () => {
   return (
     <nav className={style.root}>
-      <NavLink className={style.link} to='/history'>
-        History
-      </NavLink>
-      <NavLink className={style.link} to='/currency-transfer'>
-        Currency Transfer
-      </NavLink>
       <NavLink className={style.link} to='/'>
         Calculator
       </NavLink>
+      <NavLink className={style.link} to='/history'>
+        History
+      </NavLink>
+      {/* <NavLink className={style.link} to='/currency-transfer'>
+        Currency Transfer
+      </NavLink> */}
     </nav>
   );
 };

@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import style from "./Nambar.module.scss";
+import styles from "./Nambar.module.scss";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
-    <nav className={style.root}>
-      <NavLink className={style.link} to='/'>
+    <nav className={styles.root}>
+      <NavLink className={styles.link} to='/'>
         Calculator
       </NavLink>
-      <NavLink className={style.link} to='/history'>
+      <NavLink className={styles.link} to='/history'>
         History
       </NavLink>
       {/* <NavLink className={style.link} to='/currency-transfer'>

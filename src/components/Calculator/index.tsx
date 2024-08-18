@@ -10,6 +10,7 @@ import {
 } from "../../redux/slices/calculatorSlice";
 import { addHistoryEntry } from "../../redux/slices/historySlice";
 import style from "./Calculator.module.scss";
+import { RootState } from "../../redux/store";
 
 const numbersArr = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "."];
 const operationsArr = ["+", "-", "*", "/"];
@@ -17,8 +18,8 @@ const operationsArr = ["+", "-", "*", "/"];
 const Calculator = () => {
   const dispatch = useDispatch();
   const { firstInput, secondInput, result, operator, isCalculated } =
-    useSelector((state) => state.calculator);
-  const handleDigitClick = (digit) => {
+    useSelector((state: RootState) => state.calculator);
+  const handleDigitClick = (digit: string) => {
     if (!isCalculated) {
       if (!operator) {
         dispatch(addFirst(digit));
@@ -28,7 +29,7 @@ const Calculator = () => {
     }
   };
 
-  const handleOperatorClick = (operator) => {
+  const handleOperatorClick = (operator: string) => {
     if (!isCalculated) {
       dispatch(setOperator(operator));
     }

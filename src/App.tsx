@@ -6,7 +6,7 @@ import CurrencyTransfer from "./pages/CurrencyTransfer";
 import Navbar from "./components/Navbar";
 import "./scss/app.scss";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className='App'>
       <Navbar />
@@ -17,6 +17,6 @@ function App() {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;
